@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import List from "./List";
+import Footer from "./Footer";
 
 export default function App() {
   const [inputList, setInputList] = useState("");
@@ -58,6 +59,7 @@ export default function App() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
