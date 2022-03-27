@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --purple: #8566aa;
+  --borderShadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.main_div {
+  width: 100%;
+  height: 100vh;
+  background-color: #6983aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div {
+  width: 40%;
+  height: 80vh;
+  background-color: #f4f4f4;
+  box-shadow: var(--borderShadow);
+  border-radius: 1.5rem;
+}
+
+h1 {
+  color: white;
+  background: transparent;
+  background-color: var(--purple);
+  padding: 6px 0 2px 0;
+  margin-bottom: 1rem;
+  box-shadow: var(--borderShadow);
+}
+
+input {
+  text-align: center;
+  height: 3rem;
+  top: 1rem;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid var(--purple);
+  outline: none;
+}
+
+button {
+  min-height: 4rem;
+  width: 6rem;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: var(--purple);
+  color: #fff;
+  font-size: 4rem;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  box-shadow: var(--borderShadow);
+}
+
+button:hover {
+  background-color: #20bf6b;
+}
+
+.items {
+  overflow-y: auto;
+  height: 67%;
+}
+.items::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 10px;
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 10px;
+}
+
+ol li {
+  padding-left: 0;
+  text-align: left;
+  font-size: 2rem;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  color: var(--purple);
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif;
+}
+
+.todo_style {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.todo_style .fa-times {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: var(--purple);
+  border-radius: 50%;
+  margin: 0 1.5rem 0 3.5rem;
+  color: aliceblue;
+  box-shadow: var(--borderShadow);
+}
+
+.todo_style .fa-times:hover {
+  background-color: crimson;
+}
+
+.todo_style .fa-times:hover .list_style {
+  color: crimson;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 42%;
+  }
+  .center_div {
+    width: 55%;
+  }
+
+  .todo_style .fa-times {
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin-left: 0.5rem;
+    min-height: 4rem;
+    width: 4rem;
+    color: #fff;
+    font-size: 3rem;
+  }
+}
