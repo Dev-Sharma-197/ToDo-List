@@ -126,8 +126,8 @@ ol li {
 }
 
 .todo_style .fa-times {
-  width: 2rem;
-  height: 2rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
   line-height: 2rem;
   background-color: var(--purple);
   border-radius: 50%;
